@@ -1,0 +1,9 @@
+<div *ngFor="let currentBeer of childBeerList" [class]="priorityColor(currentBeer)">
+  <h2>{{currentBeer.beerName}}</h2>
+  <h3>{{currentBeer.brand}}</h3>
+  <p>Price: $<span>{{currentBeer.price}}</span></p>
+  <p>ABV: <span>{{currentBeer.abv}}</span></p>
+  <p>Pints Remaning: <span>{{currentBeer.status}}</span></p>
+  <button (click)="editButtonClicked(currentBeer)" type="button" name="button">Edit</button>
+  <button (click)="sellPintClicked(currentBeer)" type="button" name="button">Sell Pint</button>
+</div>
