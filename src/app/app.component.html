@@ -2,3 +2,4 @@
 <h3>Tap List for {{month}}/{{day}}/{{year}}</h3>
 <app-beer-list [childBeerList]="masterBeerList" (clickSender)="editBeer($event)" (sellPintSender)="sellPint($event)"></app-beer-list>
 <app-edit-beer [childSelectedBeer]="selectedBeer" (finishedSender)="finishedEditing($event)"></app-edit-beer>
+<app-new-beer (sendBeer)="addBeer($event)"></app-new-beer>

@@ -30,7 +30,9 @@ export class AppComponent {
       this.selectedPint.status = 0;
     }
   }
-
+  addBeer(newBeer: Beer) {
+    this.masterBeerList.push(newBeer);
+  }
 
   masterBeerList: Beer[] = [
     new Beer("Oktoberfest Marzen", "Hacker-Pschorr", 5.25, 5.5, 124),

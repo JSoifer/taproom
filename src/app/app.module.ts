@@ -5,16 +5,18 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BeerListComponent } from './beer-list/beer-list.component';
 import { EditBeerComponent } from './edit-beer/edit-beer.component';
+import { NewBeerComponent } from './new-beer/new-beer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BeerListComponent,
-    EditBeerComponent
+    EditBeerComponent,
+    NewBeerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
     FormsModule
   ],
   providers: [],
