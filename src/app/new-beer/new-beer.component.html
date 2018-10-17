@@ -1,5 +1,4 @@
 <div>
-  <h3>{{childSelectedBeer.beerName}}</h3>
   <h3>app-new-beer Beer</h3>
   <label>Beer Name:</label>
   <input #newBeerName>
@@ -15,5 +14,6 @@
   <br>
   <label>Pints remaining in Keg:</label>
   <input #newBeerStatus>
-  <button (click)="submitForm(newBeerName.value, newBeerBrand.value, newBeerPrice.value, newBeerAbv.value, newBeerStatus.value); newBeerName.value='';newBeerBrand.value='';newBeerPrice='';newBeerAbv.value='';newBeerStatus.value='124'">Add</button>
+  <button (click)="submitForm(newBeerName.value, newBeerBrand.value, newBeerPrice.value, newBeerAbv.value, newBeerStatus.value); newBeerBrand.value=''; newBeerName.value=''; newBeerPrice.value=''; newBeerAbv.value=''; newBeerStatus.value='124'">Add</button>
 </div>
+  -->
