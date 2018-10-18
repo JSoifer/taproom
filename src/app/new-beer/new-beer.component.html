@@ -14,5 +14,13 @@
   <br>
   <label>Pints remaining in Keg:</label>
   <input #newBeerStatus>
-  <button (click)="submitForm(newBeerName.value, newBeerBrand.value, newBeerPrice.value, newBeerAbv.value, newBeerStatus.value); newBeerBrand.value=''; newBeerName.value=''; newBeerPrice.value=''; newBeerAbv.value=''; newBeerStatus.value='124'">Add</button>
+  <br>
+  <label>Beer Color:</label>
+  <br>
+  <select #beerColor>
+    <option value="#FCC745"> Light</option>
+    <option value="#8F3100"> Amber</option>
+    <option value="#3D120B"> Dark</option>
+  </select>
+  <button (click)="submitForm(newBeerName.value, newBeerBrand.value, newBeerPrice.value, newBeerAbv.value, newBeerStatus.value, beerColor.value); newBeerBrand.value=''; newBeerName.value=''; newBeerPrice.value=''; newBeerAbv.value=''; newBeerStatus.value='124'">Add</button>
 </div>

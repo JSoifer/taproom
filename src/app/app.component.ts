@@ -32,9 +32,9 @@ export class AppComponent {
   }
 
   masterBeerList: Beer[] = [
-    new Beer("Oktoberfest Marzen", "Hacker-Pschorr", 5.25, 5.5, 124),
-    new Beer("Dunkel", "Hofbrau", 5.25, 5.5, 15),
-    new Beer("Weissbier", "Paulaner", 5.25, 5.5, 124)
+    new Beer("Oktoberfest Marzen", "Hacker-Pschorr", 5.25, 5.5, 124, '#FF8C15'),
+    new Beer("Dunkel", "Hofbrau", 5.25, 5.5, 15, '#44110E'),
+    new Beer("Weissbier", "Paulaner", 5.25, 5.5, 124, '#F2B749')
   ];
 
 }

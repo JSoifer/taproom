@@ -10,8 +10,8 @@ import { Beer } from '../models/beer.model';
 export class NewBeerComponent  {
 @Output() sendBeer = new EventEmitter();
 
-submitForm(beerName: string, beerBrand: string, beerPrice: number, beerAbv: number, beerStatus: number ) {
-  let newBeer: Beer = new Beer(beerName, beerBrand, beerPrice, beerAbv, beerStatus);
+submitForm(beerName: string, beerBrand: string, beerPrice: number, beerAbv: number, beerStatus: number, color: string ) {
+  let newBeer: Beer = new Beer(beerName, beerBrand, beerPrice, beerAbv, beerStatus, color);
   this.sendBeer.emit(newBeer);
 }
   constructor() { }

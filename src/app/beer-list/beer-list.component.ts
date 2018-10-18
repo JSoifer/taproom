@@ -12,13 +12,6 @@ export class BeerListComponent {
   @Output() sellPintSender = new EventEmitter();
   constructor() { }
 
-  priorityColor(currentBeer){
-    if (currentBeer.status <= 5){
-      return "beerInfo" ;
-    } else {
-      return "beerInfo";
-    }
-  }
 
   editButtonClicked(beerToEdit: Beer) {
     this.clickSender.emit(beerToEdit);
