@@ -9,9 +9,6 @@ import { Beer } from './models/beer.model'
 
 export class AppComponent {
   currentTime = new Date();
-  month: number = this.currentTime.getMonth() + 1;
-  day: number = this.currentTime.getDate();
-  year: number = this.currentTime.getFullYear();
   selectedBeer = null;
   selectedPint = null;
 

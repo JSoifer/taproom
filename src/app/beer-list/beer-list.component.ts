@@ -15,10 +15,8 @@ export class BeerListComponent {
   priorityColor(currentBeer){
     if (currentBeer.status <= 5){
       return "bg-danger beerInfo" ;
-    } else if (currentBeer.status <= 20) {
-      return  "bg-warning beerInfo";
     } else {
-      return "bg-info beerInfo";
+      return "beerInfo";
     }
   }
 

@@ -1,4 +1,42 @@
 .beerInfo{
-  border: 1px dashed black;
+  border: 2px solid black;
   margin: 10px;
+  width: 500px;
+  height: 275px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beerGraphicDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.beerButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+
+.beerGraphic {
+  height: 190px;
+  width: 165px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.liquid {
+  height: 200px;
+  width: 175px;
+  background-color: yellow;
+  position: absolute;
+  transform: translateY(50px);
+  z-index: -1;
 }
