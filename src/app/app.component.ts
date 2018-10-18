@@ -16,7 +16,6 @@ export class AppComponent {
     this.selectedBeer = beerToEdit;
   }
   finishedEditing(beerToEdit) {
-    console.log("hi")
     this.selectedBeer = null;
   }
 
@@ -27,6 +26,7 @@ export class AppComponent {
       this.selectedPint.status = 0;
     }
   }
+
   addBeer(newBeer: Beer) {
     this.masterBeerList.push(newBeer);
   }

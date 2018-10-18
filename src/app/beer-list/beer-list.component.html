@@ -1,11 +1,10 @@
-<div *ngFor="let currentBeer of childBeerList" [class]="priorityColor(currentBeer)">
+<div *ngFor="let currentBeer of childBeerList" class="beerInfo">
   <div class="beerData">
     <h2>{{currentBeer.beerName | uppercase}}</h2>
     <h3>{{currentBeer.brand}}</h3>
     <p>Price: <span>{{currentBeer.price | currency: USD}}</span></p>
     <p>ABV: <span>{{currentBeer.abv}}</span></p>
     <p>Pints Remaning: <span>{{currentBeer.status}}</span></p>
-
   </div>
   <div class="beerGraphicDiv">
     <div class="beerGraphic">
@@ -20,7 +19,7 @@
           </g>
         </g>
       </svg>
-      <div class="liquid">
+      <div class="liquid" [ngStyle]="{'height.px': currentBeer.status*1.5}">
       </div>
     </div>
     <div class="beerButtons">

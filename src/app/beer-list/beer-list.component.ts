@@ -14,7 +14,7 @@ export class BeerListComponent {
 
   priorityColor(currentBeer){
     if (currentBeer.status <= 5){
-      return "bg-danger beerInfo" ;
+      return "beerInfo" ;
     } else {
       return "beerInfo";
     }
@@ -23,6 +23,7 @@ export class BeerListComponent {
   editButtonClicked(beerToEdit: Beer) {
     this.clickSender.emit(beerToEdit);
     }
+
   sellPintClicked(beerToEdit: Beer) {
     this.sellPintSender.emit(beerToEdit);
     }
